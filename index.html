@@ -343,7 +343,7 @@
       width: calc(100% - 30px);
       height: calc(100% - 30px);
       object-fit: cover;
-      border-radius: 2px;
+      border-radius: 12px;
       opacity: 0;
       transition: opacity 0.55s ease;
     }
@@ -559,6 +559,20 @@
       -webkit-mask-composite: xor;
       mask-composite: exclude;
       pointer-events: none;
+    }
+
+    .partners-img-wrap {
+      background: #162323;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 40px;
+    }
+
+    .partners-full-img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      object-fit: cover;
     }
 
     .partner-rule {
@@ -867,10 +881,13 @@
 
       /* Innovation */
       #innovation { padding-top: 60px; }
+      .innovation-headline { font-size: 24px; }
       .innovation-grid { grid-template-columns: 1fr; }
 
       /* Partners */
       #partners { padding-top: 60px; }
+      .partners-img-wrap { padding: 0; border-radius: 12px; }
+      .partners-full-img { border-radius: 12px; }
 
       #partners .section-label-v {
         flex-direction: row;
@@ -884,7 +901,7 @@
         margin: 0;
       }
 
-      .partners-headline { text-align: left; }
+      .partners-headline { text-align: left; font-size: 24px; }
 
       .partners-grid,
       .partners-grid--2 {
@@ -1101,7 +1118,7 @@
           <span class="section-name">Innovation</span>
         </div>
         <h2 class="innovation-headline">
-          <span class="accent">Redefining</span> What Jade Can Be
+          <span class="accent">Redefining</span> Jade Products
         </h2>
         <p class="innovation-body">By creating entirely new product categories, we are leveraging our uniquely large boulders with revolutionary manufacturing methods to create pieces never before possible.</p>
         <div class="innovation-grid">
@@ -1133,6 +1150,9 @@
           We've built an <span class="accent">unparalleled</span><br>
           network to bring our mission to life
         </h2>
+        <div class="partners-img-wrap">
+          <img src="images/partnerships.jpg" alt="Jade Vault Partnerships" class="partners-full-img">
+        </div>
         <div class="partners-grid">
           <div class="partner-card">
             <span class="partner-rule"></span>
